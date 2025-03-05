@@ -1,2 +1,0 @@
-# Cookies
-Just cookies
