@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+int main() {
+    // Seed the random number generator
+    std::srand(static_cast<unsigned int>(std::time(0)));
+
+    // Generate two random numbers between 1 and 500
+    int num1 = std::rand() % 500 + 1;
+    int num2 = std::rand() % 500 + 1;
+
+    // Display the math problem
+    std::cout << "Solve the following problem:\n";
+    std::cout << num1 << " + " << num2 << " = ?" << std::endl;
+
+    // Pause and wait for the student to press a key
+    std::cout << "Press Enter when you are ready to see the answer...";
+    std::cin.get();
+
+    // Display the correct answer
+    int sum = num1 + num2;
+    std::cout << num1 << " + " << num2 << " = " << sum << std::endl;
+
+    return 0;
+}

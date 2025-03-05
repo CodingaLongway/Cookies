@@ -1,2 +1,1 @@
-# Cookies
-Just cookies
+This is a math tutor code
